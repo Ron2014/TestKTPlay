@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/kryptanium_base_color_white"
+    android:paddingBottom="5dp"
+    >
+    
+    <!-- 推荐人列表 -->
+     <ListView
+        android:id="@+id/kryptanium_hot_item_player_iv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/kryptanium_selected_bg_grey"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="0.4dp"
+        android:background="@null"
+        android:paddingLeft="8dp"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="@dimen/kryptanium_button_content_height"
+         />
+     
+     <!-- 发送邀请按钮 -->
+      <TextView
+            android:id="@+id/kryptanium_recommend_friends_invite"
+            android:layout_width="@dimen/kryptanium_button_content_width"
+            android:layout_height="@dimen/kryptanium_button_content_height"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@drawable/kryptanium_button_bg"
+            android:gravity="center"
+            android:text="@string/s_kt_send_invite"
+            android:textColor="@color/kryptanium_text_white"
+            android:textSize="@dimen/kryptanium_text_size_big" 
+            
+            />
+     
+</FrameLayout>

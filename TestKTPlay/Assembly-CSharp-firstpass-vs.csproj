@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{CAD5FFBE-EA72-9424-49CC-E8501E8B63BA}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\KTPlay\Scripts\Android\KTAccountManagerAndroid.cs" />
+     <Compile Include="Assets\Plugins\KTPlay\Scripts\Android\KTFriendshipAndroid.cs" />
+     <Compile Include="Assets\Plugins\KTPlay\Scripts\Android\KTLeaderboardAndroid.cs" />
+     <Compile Include="Assets\Plugins\KTPlay\Scripts\Android\KTPlayAndroid.cs" />
+     <Compile Include="Assets\Plugins\KTPlay\Scripts\KTAccountManager.cs" />
+     <Compile Include="Assets\Plugins\KTPlay\Scripts\KTError.cs" />
+     <Compile Include="Assets\Plugins\KTPlay\Scripts\KTFriendship.cs" />
+     <Compile Include="Assets\Plugins\KTPlay\Scripts\KTJSON.cs" />
+     <Compile Include="Assets\Plugins\KTPlay\Scripts\KTLeaderboard.cs" />
+     <Compile Include="Assets\Plugins\KTPlay\Scripts\KTPlay.cs" />
+     <Compile Include="Assets\Plugins\KTPlay\Scripts\KTUser.cs" />
+     <Compile Include="Assets\Plugins\KTPlay\Scripts\iOS\KTAccountManageriOS.cs" />
+     <Compile Include="Assets\Plugins\KTPlay\Scripts\iOS\KTFriendshipiOS.cs" />
+     <Compile Include="Assets\Plugins\KTPlay\Scripts\iOS\KTLeaderboardiOS.cs" />
+     <Compile Include="Assets\Plugins\KTPlay\Scripts\iOS\KTPlayiOS.cs" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_follow_button_friends_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_menudialog_select_gender.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_provision_layout.xml" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_default_icon_app.xml" />
+     <None Include="Assets\NGUI\ReadMe - 3.7.2.txt" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_white_select.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_user_profile_setting_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_menudialog_select_topic_creply.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_user_forgot_password_layout.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_gray.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_frame_contex_port.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_checkbox_circle.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_sns_select_type_item_line.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_white.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_button_report_bg.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_simple_titlebar_textbutton.xml" />
+     <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_tab_titlebar.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_selectimage.xml" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_friendship_request_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_number_bg.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_little_gray.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_button_menu_cancel.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_follow_button_praise_layout.xml" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
+     <None Include="Assets\Plugins\Android\res\drawable-hdpi\ktplay_plugin_sns_loading_bg.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_tabpage_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_select_friend.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\ktplay_plugin_sns_loading_bg.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_hot_topic_dot_normal_backgrount.xml" />
+     <None Include="Assets\Plugins\Android\res\values\kryptanium_common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapterview_footer_vertical.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_button_report_pressed.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_white_alpha.xml" />
+     <None Include="Assets\Plugins\Android\res\layout-port\kryptanium_frame_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_layout_titlebar.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_corner_menu_bg_white_dx.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 1.shader" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_tran_black.xml" />
+     <None Include="Assets\Plugins\Android\res\values\kryptanium_styles.xml" />
+     <None Include="Assets\Plugins\Android\res\values\kryptanium_colors_adapter.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_leaderboard_footer_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_button_fullscreen_close_normal.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_createtopic_layout.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 2.shader" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_simple_titlebar_tip.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_adapter_item_image.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_own_title_button_right.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_button_warning.xml" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Masked Colored.shader" />
+     <None Include="Assets\Plugins\Android\res\values\kryptanium_foundation_dimens.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_leaderboard_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_user_login_channel.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_share_sns_friend.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_share_sns_item_friend.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_frame_contex_right.xml" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
+     <None Include="Assets\Plugins\Android\res\layout-port\kryptanium_hot_item_player_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\values-v11\styles.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_friends_action.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_friends_add_from.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_topic.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_darkgray.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_button_title_n.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_frame_menu_port.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_little_yellow.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_white_with_border_incomplete.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_topic_footerview.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_dialogitem_topic_cancel.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_auth_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_dialogitem_topic.xml" />
+     <None Include="Assets\Plugins\Android\res\anim\kryptanium_slide_bottom_to_top.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_follow_button_map_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable-port\kryptanium_tab_bg.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_tab_bg.xml" />
+     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_sns_register_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_frame_game_inform_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout-port\kryptanium_adapter_item_image.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_tran_black_btn_delete.xml" />
+     <None Include="Assets\Plugins\Android\res\layout-port\kryptanium_hot_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_button_save_bg_n.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_other_user_friends.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_hot_item_game_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_line.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_button_many_words_n.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_tabindicator.xml" />
+     <None Include="Assets\Plugins\Android\res\anim\kryptanium_slide_left_to_right.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_hot_item_player_store_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_silvery.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_frame_contex_padding_left.xml" />
+     <None Include="Assets\Plugins\Android\res\color\kryptanium_titlebar_tabtext.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_topicreply.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_dialogitem_cancel.xml" />
+     <None Include="Assets\Plugins\Android\res\values\kryptanium_settings.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_image_creator_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\ktplay_plugin_sns_loading.xml" />
+     <None Include="Assets\Plugins\Android\res\anim\kryptanium_slide_right_to_left.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_black.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_selectimage_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_user_profile_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\values\kryptanium_plugin_classes.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_loingout_dialog.xml" />
+     <None Include="Assets\Plugins\Android\res\values-zh-rCN\kryptanium_commons_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_white_with_border.xml" />
+     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_user_login_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_friends_action_layout.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_liker.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_friend_sns.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_topicreply_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\values\kryptanium_dimens.xml" />
+     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_friends_login_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_mg_button.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_inviteuser.xml" />
+     <None Include="Assets\Plugins\Android\res\values\kryptanium_colors.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\ktplay_plugin_sns_native_auth.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_own_title_button_left.xml" />
+     <None Include="Assets\Plugins\Android\res\values\kryptanium_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable-port\kryptanium_button_blue_n.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_corner_imgcon_bg_gray_dx.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_imagereply_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_add_friend_players_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_shareto_sns_item.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_addfriend_icon_bg.xml" />
+     <None Include="Assets\Plugins\Android\res\values\styles.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_default_icon_app_fitxy.xml" />
+     <None Include="Assets\Plugins\Android\res\values\kryptanium_colors_standalone_login.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_standlone_login_frame.xml" />
+     <None Include="Assets\Plugins\Android\res\values-v14\styles.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_corner_bg_white_dx.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable-hdpi\ktplay_plugin_sns_button_close.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_user_image.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_corner_bg_white.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_login_dialog.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_button_two_words.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_users_item_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_notice_dialog.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_hot_topic_backgrount.xml" />
+     <None Include="Assets\Plugins\Android\res\anim\kryptanium_slide_left_to_right_hide.xml" />
+     <None Include="Assets\Plugins\Android\res\values\ktplay_plugin_sns_colors.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_imagepreview_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_login_dialog_bg.xml" />
+     <None Include="Assets\Plugins\Android\res\layout-port\kryptanium_strong_notice_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\values-port\kryptanium_dimens.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_blue.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_game_store_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_dialog_bg.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_sns_select_type_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_image_detail.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_dropdown_arrow.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_button_bg.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 1.shader" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_corner_bg_gray.xml" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 1.shader" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_info_page.xml" />
+     <None Include="Assets\Plugins\Android\res\values-zh-rCN\kryptanium_common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_frame_contex_padding_port.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_users_top5_item_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_hot_topic_dot_select_backgrount.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_dialog_wait_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_menudialog.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_button_red.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_white_with_border_search.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_new_msg.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_simple_titlebar_imagebutton.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_friendslist_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_friend_route.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_black_close_dialog.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_msgbox_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_image.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_white_with_border_no_rounded.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_full_image_reply.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_frame_layout.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_button_blue_n.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_orange.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_friend_kt.xml" />
+     <None Include="Assets\Plugins\Android\res\values\kryptanium_values.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable-port\kryptanium_button_red_n.xml" />
+     <None Include="Assets\Plugins\Android\res\values\kryptanium_foundation_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_add_friend_title.xml" />
+     <None Include="Assets\Plugins\Android\res\menu\kryptanium_menu_screenshot.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_loading_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout-port\kryptanium_hot_item_game_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_topiccategory_selector.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_button_disscusion_normal.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_standlone_login_input.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
+     <None Include="Assets\Plugins\Android\res\layout\main.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_hot_item_topic_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_topic_layout_own.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_frame_contex_padding_right.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_fullscreen_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_classify_gray.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_silvery_btn_title.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_sns_auth_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\values\kryptanium_commons_dimens.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_yellow.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_user_topic.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_corner_edittext_bg_gray_dx.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_hot_item_image_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_topic_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_user_profile_userinfo_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_other_user_friends_list.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_frame_contex_padding.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_game_promotion_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_corner_bg_black_alpha.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_tab_titlebar_text.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_dialogitem_header.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_menudialog_bg.xml" />
+     <None Include="Assets\Plugins\Android\res\anim\kryptanium_slide_top_to_bottom.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_frame_contex_left.xml" />
+     <None Include="Assets\Plugins\Android\res\values\kryptanium_colors_skin.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_block_bg.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_add_friend_sns_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_strong_notice_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_friend_title.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_simple_titlebar_back.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_liker_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_green_rounded.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_progress_dx.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_button_red_n.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_pull_refreshview_head.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_friends_recommendation_kt.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_menudialog_send_to_sns.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapterview_footer.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_tran_black_btn_close.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_button_cancel.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_search.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_cancel_bg_black_alpha.xml" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Additive Colored.shader" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_frame_menu_left.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_simple_titlebar_close.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_right_content_backgrount.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_leaderboard.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_topic_detail.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_simple_titlebar.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_blue_disscusion.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_red.xml" />
+     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
+     <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
+     <None Include="Assets\Plugins\Android\res\layout-port\kryptanium_user_other_profile_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_orange_like.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_friend.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_checkbox.xml" />
+     <None Include="Assets\Plugins\Android\res\values-zh-rCN\kryptanium_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_user_register_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_follow_button_topic_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_friends_add_pathway_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\values-zh-rCN\ktplay_plugin_sns_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_user_album_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_hot_item_player_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_user_login_game.xml" />
+     <None Include="Assets\Plugins\Android\res\layout-port\kryptanium_user_profile_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_frame_menu_right.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_users_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_standlone_login_button.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_tab_transparent_bg.xml" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth.shader" />
+     <None Include="Assets\Plugins\Android\res\anim\kryptanium_slide_right_to_left_show.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_hot_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\ktplay_roundbg_dark.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_topic_search_button_bg_n.xml" />
+     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_friend_recommendation_kt.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_myfriends_titlebar.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_user_set_info_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_dialog.xml" />
+     <None Include="Assets\Plugins\Android\res\values\strings.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_menudialog_topic_change.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_textfield_bg.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_silvery_btn_add_image.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_imagereply.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_friend_request.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_corner_bg_gray_dx.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_purple.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_topic_category_bg.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_friends_adder.xml" />
+     <None Include="Assets\Plugins\Android\res\values\kryptanium_foundation_ids.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_friends_splashscreen_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_user_other_profile_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_layout_test.xml" />
+     <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_strong_adapter_item_friend.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_user_topicreply.xml" />
+     <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_2g3g_choose_backgrount.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_leaderboard_header_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_tran_black_btn_save.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_game_inform_bg.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_create_topicreply_layout.xml" />
+     <None Include="Assets\Plugins\Android\res\values\kryptanium_foundation_settings.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_green.xml" />
+     <None Include="Assets\Plugins\Android\res\values\ktplay_plugin_sns_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_colorbg_blue_btn_title.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_adapter_item_msgbox.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\kryptanium_reward_button.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_dialogitem_normal.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\kryptanium_add_image_thumbnail_item_layout.xml" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

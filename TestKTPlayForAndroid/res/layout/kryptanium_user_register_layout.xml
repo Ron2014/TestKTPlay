@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="96dp" >
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:orientation="vertical" >
+
+            <com.ktplay.widget.KTEditText
+                android:id="@id/kryptanium_user_register_nickname"
+                android:layout_width="236dp"
+                android:layout_height="30dp"
+                android:background="@drawable/kryptanium_colorbg_white_with_border"
+                android:hint=""
+                android:imeOptions="actionDone"
+                android:nextFocusUp="@null"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/kryptanium_text_black"
+                android:textColorHint="@color/kryptanium_text_dark_gray"
+                android:textSize="@dimen/kryptanium_fontsize_big" />
+
+            <com.ktplay.widget.KTEditText
+                android:id="@id/kryptanium_user_register_password"
+                android:layout_width="236dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/kryptanium_colorbg_white_with_border"
+                android:hint="@string/s_kt_loginview_pwd"
+                android:inputType="textPassword"
+                android:nextFocusDown="@id/kryptanium_user_register_nickname"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/kryptanium_text_black"
+                android:textColorHint="@color/kryptanium_text_dark_gray"
+                android:textSize="@dimen/kryptanium_fontsize_big" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/kryptanium_user_register_button_area"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="95dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/kryptanium_user_register_button"
+            style="@style/kryptanium_textview_2_button"
+            android:layout_width="236dp"
+            android:layout_height="31dp"
+            android:background="@drawable/kryptanium_colorbg_green"
+            android:text="@string/s_kt_register"
+            android:textColor="@color/kryptanium_text_white"
+            android:textSize="@dimen/kryptanium_text_size_standard" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/kryptanium_register_policy_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kryptanium_user_register_button_area"
+        android:layout_marginTop="15dp"
+        android:gravity="center" >
+
+        <com.ktplay.widget.KTLinkableTextView
+            android:id="@+id/kryptanium_register_policy"
+            android:layout_width="236dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/kryptanium_base_color_gray" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/kryptanium_register_kt_logo_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kryptanium_register_policy_layout"
+        android:layout_marginTop="15dp" >
+
+        <RelativeLayout
+            android:id="@+id/kryptanium_register_back2login"
+            android:layout_width="236dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+             >
+
+            <ImageView
+                android:id="@+id/kryptanium_login_ktlogo"
+                android:layout_width="64dp"
+                android:layout_height="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/kryptanium_icon_ktplay" />
+            <TextView
+                android:id="@+id/kryptanium_register_back2login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/s_kt_login"
+                android:textColor="@color/kryptanium_text_blue" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
